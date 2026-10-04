@@ -1,0 +1,56 @@
+Exercise 3 Format Compliance Report
+============================================================
+Input folder: /Users/zimmeljavedvirk/Desktop/isp ab/Exercise3_Files
+Output folder: /Users/zimmeljavedvirk/Desktop/isp ab/Exercise3
+Preferred video encoder: libx264 (H.264 fallback)
+NOTE: libx265 is not available in FFmpeg build, so H.265 conversion cannot be done here.
+      Converted files use H.264 (libx264) instead.
+============================================================
+
+File: Last_man_on_earth_1964.mov
+Status: NON-COMPLIANT
+  - Video codec: prores (expected hevc/H.265)
+  - Audio codec: pcm_s16le (expected aac)
+  - Frame rate: 23.976023976023978 (expected 25)
+  - Video bitrate: 9285191 (expected 2–5 Mb/s)
+  - Audio bitrate: 1536000 (expected ≤256k)
+Converted to: Last_man_on_earth_1964_formatOK.mp4
+Output codec: v=h264, a=aac, fps=25.0, res=640x360, dar=16:9
+
+File: Voyage_to_the_Planet_of_Prehistoric_Women.mp4
+Status: NON-COMPLIANT
+  - Audio codec: mp3 (expected aac)
+  - Frame rate: 29.97002997002997 (expected 25)
+  - Video bitrate: 8038857 (expected 2–5 Mb/s)
+  - Audio bitrate: 320000 (expected ≤256k)
+Converted to: Voyage_to_the_Planet_of_Prehistoric_Women_formatOK.mp4
+Output codec: v=h264, a=aac, fps=25.0, res=640x360, dar=16:9
+
+File: The_Gun_and_the_Pulpit.avi
+Status: NON-COMPLIANT
+  - Container: avi (expected mp4)
+  - Video codec: rawvideo (expected hevc/H.265)
+  - Audio codec: pcm_s16le (expected aac)
+  - Resolution: 720x404 (expected 640x360)
+  - Aspect ratio: None (expected 16:9)
+  - Video bitrate: 87438878 (expected 2–5 Mb/s)
+  - Audio bitrate: 1536000 (expected ≤256k)
+Converted to: The_Gun_and_the_Pulpit_formatOK.mp4
+Output codec: v=h264, a=aac, fps=25.0, res=640x360, dar=None
+
+File: Cosmos_War_of_the_Planets.mp4
+Status: NON-COMPLIANT
+  - Video codec: h264 (expected hevc/H.265)
+  - Frame rate: 29.97002997002997 (expected 25)
+  - Resolution: 628x354 (expected 640x360)
+  - Aspect ratio: 314:177 (expected 16:9)
+  - Audio bitrate: 317103 (expected ≤256k)
+Converted to: Cosmos_War_of_the_Planets_formatOK.mp4
+Output codec: v=h264, a=aac, fps=25.0, res=640x360, dar=314:177
+
+File: The_Hill_Gang_Rides_Again.mp4
+Status: NON-COMPLIANT
+  - Video codec: h264 (expected hevc/H.265)
+  - Video bitrate: 7537730 (expected 2–5 Mb/s)
+Converted to: The_Hill_Gang_Rides_Again_formatOK.mp4
+Output codec: v=h264, a=aac, fps=25.0, res=640x360, dar=16:9
